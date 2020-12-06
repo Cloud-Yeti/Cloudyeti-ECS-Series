@@ -69,3 +69,11 @@ docker push $account_id.dkr.ecr.$region.amazonaws.com/cloudyeti/nginx
 ![td](https://github.com/Cloud-Yeti/Cloudyeti-ECS-Series/blob/main/Part1/Images/5.png)
 #### You can select the minimul task_memory and vCPU for this lab and click "Create"
 ![td](https://github.com/Cloud-Yeti/Cloudyeti-ECS-Series/blob/main/Part1/Images/6.png)
+![td](https://github.com/Cloud-Yeti/Cloudyeti-ECS-Series/blob/main/Part1/Images/7.png)
+![td](https://github.com/Cloud-Yeti/Cloudyeti-ECS-Series/blob/main/Part1/Images/8.png)
+![td](https://github.com/Cloud-Yeti/Cloudyeti-ECS-Series/blob/main/Part1/Images/9.png)
+![td](https://github.com/Cloud-Yeti/Cloudyeti-ECS-Series/blob/main/Part1/Images/10.png)
+![td](https://github.com/Cloud-Yeti/Cloudyeti-ECS-Series/blob/main/Part1/Images/11.png)
+![td](https://github.com/Cloud-Yeti/Cloudyeti-ECS-Series/blob/main/Part1/Images/12.png)
+![td](https://github.com/Cloud-Yeti/Cloudyeti-ECS-Series/blob/main/Part1/Images/13.png)
+![td](https://github.com/Cloud-Yeti/Cloudyeti-ECS-Series/blob/main/Part1/Images/14.png)
