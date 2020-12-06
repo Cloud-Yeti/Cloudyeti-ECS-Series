@@ -49,7 +49,8 @@ aws --region $region ecr get-login-password | docker login --password-stdin --us
 
 ##### fetch the container_id of nginx image
 ```
-image_id=`docker images | awk '{ print $3 }' | sed 1d`
+docker images
+image_id=ba4kdkd93kd9   # `docker images | awk '{ print $3 }' | sed 1d`
 ```
 ##### tag the image
 ```
