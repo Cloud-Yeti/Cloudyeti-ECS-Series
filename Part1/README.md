@@ -38,7 +38,7 @@ Pre-requisites:
   Default output format [None]: json
   ```
   
-#### Export your region and account_id
+#### Export your region and account_id (If you copy the ECR push command from AWS Console, you don't need these steps, but it's good to have anyways)
 ```sh
 export region=us-east-1
 export account_id=<your_ac_id>
@@ -51,14 +51,9 @@ export account_id=<your_ac_id>
 aws --region $region ecr get-login-password | docker login --password-stdin --username AWS $account_id.dkr.ecr.$region.amazonaws.com
 ```
 
-##### copy the image_id of nginx image
-```
-docker images
-# copy the image id of nginx image and paste it in place of $image_id below
-```
 ##### tag the image
 ```
-docker tag $image_id $account_id.dkr.ecr.$region.amazonaws.com/cloudyeti/nginx
+docker tag nginx $account_id.dkr.ecr.$region.amazonaws.com/cloudyeti/nginx
 ```
 ##### push the image 
 ```
