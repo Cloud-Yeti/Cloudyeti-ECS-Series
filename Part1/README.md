@@ -17,3 +17,31 @@ docker images
 # See the running containers
 docker ps
 ```
+#### To push image to ecr, follow Below Steps
+
+```
+Pre-requisites:
+```
+  * have aws cli installed
+  * https://docs.aws.amazon.com/cli/latest/userguide/install-cliv2.html
+  * Configure AWS Credentials
+  ```
+  aws configure
+  AWS Access Key ID [None]: AKIAIOSFODNN7EXAMPLE
+  AWS Secret Access Key [None]: wJalrXUtnFEMI/K7MDENG/bPxRfiCYEXAMPLEKEY
+  Default region name [None]: us-west-2
+  Default output format [None]: json
+  ```
+  
+#### Export your region and account_id
+```sh
+export region=us-east-1
+export account_id=<your_ac_id>
+```
+#### To create a repo using aws cli
+  * aws ecr create-repository --region  --repository-name cloudyeti/nginx
+#### To push your local image to ECR, you must login and then only you are permitted to push
+```
+aws --region $(region) ecr get-login-password | docker login --password-stdin --username AWS $(account_id).dkr.ecr.$(region).amazonaws.com
+docker push nginx
+```
