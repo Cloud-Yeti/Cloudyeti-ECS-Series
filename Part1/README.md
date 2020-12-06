@@ -54,9 +54,9 @@ docker images
 ```
 ##### tag the image
 ```
-docker tag $image_id $account_id.dkr.ecr.$region.amazonaws.com/nginx
+docker tag $image_id $account_id.dkr.ecr.$region.amazonaws.com/cloudyeti/nginx
 ```
 ##### push the image 
 ```
-docker push $account_id.dkr.ecr.$region.amazonaws.com/nginx
+docker push $account_id.dkr.ecr.$region.amazonaws.com/cloudyeti/nginx
 ```
