@@ -65,3 +65,7 @@ docker push $account_id.dkr.ecr.$region.amazonaws.com/cloudyeti/nginx
 #### Select Fargate Launch Type and Click Next
 #### Provide the Name of Task Definiton
 ![td](https://github.com/Cloud-Yeti/Cloudyeti-ECS-Series/blob/main/Part1/Images/4.png)
+#### Click on add container and provide the Image URI of ECR
+![td](https://github.com/Cloud-Yeti/Cloudyeti-ECS-Series/blob/main/Part1/Images/5.png)
+#### You can select the minimul task_memory and vCPU for this lab and click "Create"
+![td](https://github.com/Cloud-Yeti/Cloudyeti-ECS-Series/blob/main/Part1/Images/6.png)
