@@ -47,10 +47,10 @@ export account_id=<your_ac_id>
 aws --region $region ecr get-login-password | docker login --password-stdin --username AWS $account_id.dkr.ecr.$region.amazonaws.com
 ```
 
-##### fetch the container_id of nginx image
+##### copy the image_id of nginx image
 ```
 docker images
-image_id=ba4kdkd93kd9   # `docker images | awk '{ print $3 }' | sed 1d`
+# copy the image id of nginx image and paste it in place of $image_id below
 ```
 ##### tag the image
 ```
