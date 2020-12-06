@@ -79,7 +79,7 @@ docker push $account_id.dkr.ecr.$region.amazonaws.com/cloudyeti/nginx
 #### For high availability of your task, you must configure service.
 #### On service tab, click on create
 ![td](https://github.com/Cloud-Yeti/Cloudyeti-ECS-Series/blob/main/Part1/Images/11.png)
-#### Attach the nginx task definiton to the service and specify the numbers of task you want to run
+#### Attach the nginx task definiton to the service and specify the numbers of task you want to run. In the screenshot I have test on task definiton, please select the desired task defination you want to attach to the service.
 ![td](https://github.com/Cloud-Yeti/Cloudyeti-ECS-Series/blob/main/Part1/Images/12.png)
 #### Here, we have selected the custom VPC and 2 public subnets and we aren't configuring load balancer in this lab
 ![td](https://github.com/Cloud-Yeti/Cloudyeti-ECS-Series/blob/main/Part1/Images/13.png)
