@@ -40,7 +40,7 @@ export region=us-east-1
 export account_id=<your_ac_id>
 ```
 #### To create a repo using aws cli
-  * aws ecr create-repository --region  --repository-name cloudyeti/nginx
+  * aws ecr create-repository --region $(region) --repository-name cloudyeti/nginx
 #### To push your local image to ECR, you must login and then only you are permitted to push
 ```
 aws --region $(region) ecr get-login-password | docker login --password-stdin --username AWS $(account_id).dkr.ecr.$(region).amazonaws.com
