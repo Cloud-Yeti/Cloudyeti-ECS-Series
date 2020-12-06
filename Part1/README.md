@@ -62,3 +62,5 @@ docker push $account_id.dkr.ecr.$region.amazonaws.com/cloudyeti/nginx
 ```
 #### Now create a new Task definition
 ![td](https://github.com/Cloud-Yeti/Cloudyeti-ECS-Series/blob/main/Part1/Images/3.png)
+#### Select Fargate Launch Type
+![td](https://github.com/Cloud-Yeti/Cloudyeti-ECS-Series/blob/main/Part1/Images/4.png)
