@@ -41,8 +41,14 @@ export account_id=<your_ac_id>
 ```
 #### To create a repo using aws cli
   * aws ecr create-repository --region $region --repository-name cloudyeti/nginx
-#### To push your local image to ECR, you must login and then only you are permitted to push
+#### To push your local image to ECR, you must create a tag, login and then only you are permitted to push
 ```
+# login for ECR
 aws --region $region ecr get-login-password | docker login --password-stdin --username AWS $account_id.dkr.ecr.$region.amazonaws.com
-docker push nginx
+# fetch the container_id of nginx image
+image_id=`docker images | awk '{ print $3 }' | sed 1d`
+# tag the image
+docker tag $image_id $account_id.dkr.ecr.$region.amazonaws.com/nginx
+# push the image 
+docker push $image_id $account_id.dkr.ecr.$region.amazonaws.com/nginx
 ```
