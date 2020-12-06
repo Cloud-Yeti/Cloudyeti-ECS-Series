@@ -45,10 +45,17 @@ export account_id=<your_ac_id>
 ```
 # login for ECR
 aws --region $region ecr get-login-password | docker login --password-stdin --username AWS $account_id.dkr.ecr.$region.amazonaws.com
+```
+
 # fetch the container_id of nginx image
+```
 image_id=`docker images | awk '{ print $3 }' | sed 1d`
+```
 # tag the image
+```
 docker tag $image_id $account_id.dkr.ecr.$region.amazonaws.com/nginx
+```
 # push the image 
-docker push $image_id $account_id.dkr.ecr.$region.amazonaws.com/nginx
+```
+docker push $account_id.dkr.ecr.$region.amazonaws.com/nginx
 ```
